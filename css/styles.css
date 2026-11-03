@@ -682,10 +682,11 @@ body.is-ready .hero__title .line span {
 .case__body .text-link,
 .case__body .case__role { grid-column: 2; grid-row: 3; }
 
-.case__body > p:not(.case__index) {
+.case__body > p:not(.case__index):not(.case__role) {
   grid-column: 3;
   grid-row: 1 / span 3;
   margin: 0;
+  line-height: 1.55;
 }
 
 .case__body p { color: var(--muted); }
@@ -1116,7 +1117,7 @@ body.is-ready .reveal {
   .case__body .tags,
   .case__body .text-link,
   .case__body .case__role,
-  .case__body > p:not(.case__index) {
+  .case__body > p:not(.case__index):not(.case__role) {
     grid-column: auto;
     grid-row: auto;
   }
